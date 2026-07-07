@@ -1,8 +1,17 @@
+# 1. Ignore all extensionless files (this targets compiled ELF binaries)
 *
+# 2. But do NOT ignore files that have an extension (keeps .c, .h, .txt, etc.)
+!*.*
+
+# 3. Do NOT ignore folders (so Git can still walk into directories)
 !*/
-!*.c
-!*.h
-!**/*.c
-!**/*.h
-!*.gitignore
-!**/.gitkeep
+
+# 4. Explicitly protect crucial hidden configuration files
+!.gitignore
+!.gitkeep
+
+# 5. Standard object and archive exclusions
+*.o
+*.a
+*.so
+a.out

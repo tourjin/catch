@@ -1,0 +1,12 @@
+int sss = optind;
+  int eee = (argc == optind) ? argc + 1 : argc;
+  for (int i = sss; i < eee; i++) {
+    const char *path = (argc == sss) ? "." : argv[i];
+    DIR *dir = opendir(name: path);
+
+ int start = optind;
+  int end = (argc == optind) ? argc + 1 : argc;
+  for (int i = start; i < end; i++) {
+    const char *path = (argc == start) ? "." : argv[i];
+    DIR *dir = opendir(name: path);
+

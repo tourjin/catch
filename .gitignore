@@ -2,5 +2,7 @@
 !*/
 !*.c
 !*.h
+!**/*.c
+!**/*.h
 !*.gitignore
-!*.gitkeep
+!**/.gitkeep
